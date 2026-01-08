@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2025-02 Computer Graphics Project: Portal Cube</title>
+    <style>
+        /* 화면 전체 스타일 */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+            background-color: #1a1a1a; 
+            font-family: sans-serif;
+        }
+
+        canvas {
+            display: block; 
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* 가산점 어필을 위한 UI 오버레이 */
+        #ui-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7); 
+            padding: 15px;
+            border-radius: 8px;
+            pointer-events: none; 
+            border: 1px solid #ff9900; 
+            box-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            color: #00aaff; 
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        .key {
+            font-weight: bold;
+            color: #ff9900; 
+            background: #333;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="glcanvas"></canvas>
+
+    <div id="ui-overlay">
+        <h1>Portal: Infinite Loop Experiment</h1>
+        <p><span class="key">Mouse Drag</span> : 시점 회전 (Interaction)</p>
+        <p><span class="key">Space</span> : 멈춤 / 재생 (Interaction)</p>
+        <p><span class="key">↑ / ↓</span> : 낙하 속도 조절 (Interaction)</p>
+        <p style="margin-top: 10px;">
+            * Falling Cube (Animation) & Phong Shading Applied
+        </p>
+    </div>
+
+    <script type="module" src="./portal_cube.js"></script>
+
+</body>
+</html>
