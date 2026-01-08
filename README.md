@@ -1,8 +1,8 @@
 WebGL2 Companion Cube
 Portal 게임의 컨셉을 차용하여, 두 개의 포탈 사이를 무한히 낙하하는 큐브를 구현한 3D 그래픽스 프로젝트입니다.
 
-🔗 Live Demo
-❗https://eunc61.github.io/webgl2-companion-cube/❗
+❗🔗 Live Demo❗
+https://eunc61.github.io/webgl2-companion-cube/
 
 
 🗓️ 제작 기간
